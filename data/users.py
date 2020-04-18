@@ -17,7 +17,6 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
     school_class = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     main_subject = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     about = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    extra_lessons = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     email = sqlalchemy.Column(sqlalchemy.String,
                               index=True, unique=True, nullable=True)
     hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=True)

@@ -8,7 +8,7 @@ from loginform import LoginForm, RegisterForm, NewsForm
 from werkzeug.exceptions import abort
 import news_api, news_resources
 from flask_restful import Api
-from flask_ngrok import run_with_ngrok
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
@@ -174,7 +174,7 @@ def not_found(error):
 
 
 def main():
-    db_session.global_init("db/blogs2.sqlite")
+    db_session.global_init("db/blogs.sqlite")
     #app.register_blueprint(news_api.blueprint)
     api.add_resource(news_resources.NewsListResource, '/api/v2/news')
     api.add_resource(news_resources.NewsResource, '/api/v2/news/<int:news_id>')
