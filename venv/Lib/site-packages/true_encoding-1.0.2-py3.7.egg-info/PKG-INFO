@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: true-encoding
+Version: 1.0.2
+Summary: true_encoding is the method of solving the problem of 'ISO-8859-1' about parsing html.
+Home-page: https://github.com/shinalone/true_encoding
+Author: UlionTse
+Author-email: shinalone@outlook.com
+License: MIT
+Description: **true_encoding**
+        ==================
+        
+        *Usage:*
+        --------
+        >>>from true_encoding.debug import debug
+        
+        >>>r = requests.get('http://www.fang.com')
+        
+        >>>r.encoding = debug(r)
+        
+        >>>print(r.text)
+        
+        
+Keywords: encoding,true_encoding,encode_bug,encode_debug,debug
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

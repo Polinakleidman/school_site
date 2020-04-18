@@ -1,0 +1,6 @@
+pymysql>=0.8.0
+requests>=2.18.4
+jieba>=0.39
+snownlp>=0.12.3
+beautifulsoup4>=4.6.0
+true_encoding>=1.0.2
