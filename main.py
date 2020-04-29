@@ -8,6 +8,7 @@ from loginform import LoginForm, RegisterForm, NewsForm
 from werkzeug.exceptions import abort
 import news_api, news_resources
 from flask_restful import Api
+from flask_ngrok import run_with_ngrok
 
 
 app = Flask(__name__)
@@ -16,7 +17,7 @@ app.config['PERMANENT_SESSION_LIFETIME'] = datetime.timedelta(days=365)
 login_manager = LoginManager()
 login_manager.init_app(app)
 api = Api(app)
-#run_with_ngrok(app)
+run_with_ngrok(app)
 
 
 @login_manager.user_loader
